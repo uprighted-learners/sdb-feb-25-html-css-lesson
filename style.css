@@ -1,0 +1,73 @@
+/* 
+    ? CSS - Cascading Style Sheets
+    * language that defines positioning, style, and look of HTML elements
+
+    ? Ruleset
+
+    Selector {
+        declaration
+        property: value;
+        key: value
+    }
+
+*/
+
+/* Wildcard - meaning everything */
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	border: 0;
+	padding: 0;
+	margin: 0;
+
+	/* border: 1px solid black;
+	margin: 3px; */
+}
+
+body {
+	background-color: #eeeeee;
+}
+
+header {
+	background-color: rgb(243, 122, 78);
+	padding: 1em;
+}
+
+img {
+	width: 250px;
+	height: 250px;
+	object-fit: cover;
+}
+
+/* Class selector (.) */
+.nav-links {
+	text-decoration: none;
+	color: black;
+}
+
+nav {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+/* 
+    ? Pseudo Selectors
+    * allow us to make style changes to different behaviors
+*/
+
+.nav-links:hover {
+	color: rgb(243, 122, 78);
+}
+
+/* ID Selector (#) */
+
+#pic-container {
+	/* border: 10px solid black; */
+}
+
+/* 
+    ? Box Model
+    * every element has:
+        * margin (outside)
+        * border (it, the item, element)
+        * padding (inside)
+*/
