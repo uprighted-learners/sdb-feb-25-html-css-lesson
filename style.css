@@ -61,9 +61,13 @@ nav {
 /* ID Selector (#) */
 
 #pic-container {
-	/* border: 10px solid black; */
+	border: 1px solid black;
 }
 
+/* Compound Selector */
+body ul > li:nth-last-child(1) {
+	color: red;
+}
 /* 
     ? Box Model
     * every element has:
@@ -71,3 +75,24 @@ nav {
         * border (it, the item, element)
         * padding (inside)
 */
+
+/* 
+	? Order of Specificity
+	1. !important
+	2. in-line style
+	3. id selector
+	4. class
+	5. element
+*/
+
+footer p {
+	background-color: red !important;
+}
+
+.p-tag {
+	background-color: yellow;
+}
+
+#p-tag {
+	background-color: lightskyblue;
+}
